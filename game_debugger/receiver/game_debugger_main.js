@@ -43,10 +43,21 @@ var initialize = function() {
 
   // Note that we will not automatically tear down the debugger if there are no
   // senders to make it easy for playing with the receiver using devtools.
+  var startGame = function() {
+    game.run(function() {
+      console.log('Game debugger running.');
+      gameManager.updateGameStatusText('Game debugger running.');
+    });
+  };
+
+  castReceiverManager.onReady = function(event) {
+    if (document.readyState === 'complete') {
+      startGame();
+    } else {
+      window.onload = startGame;
+    }
+  };
   castReceiverManager.start(appConfig);
-  game.run(function() {
-    console.log('Game debugger running.');
-  });
 };
 
 if (document.readyState === 'complete') {

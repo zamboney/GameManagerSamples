@@ -35,6 +35,8 @@
 
 #pragma mark - Constants
 
+static const int kDrawingOffset = 37;
+
 static const double kSpellRuneScoreGood = 0.051;
 static const double kSpellRuneScoreGreat = 0.059;
 static const double kSpellRuneScorePerfect = 0.062;
@@ -47,8 +49,8 @@ static const double kSpellRuneScorePerfect = 0.062;
   _spells = [[NSMutableArray alloc] init];
 
   // Set up SpellRuneDrawingView slightly smaller than gameUIImageView, centered on the main view.
-  CGRect gameUIBounds = self.gameUIImageView.bounds;
-  CGFloat spellRuneDrawingSize = gameUIBounds.size.height - 16;
+  CGFloat frameHeight = self.view.frame.size.height;
+  CGFloat spellRuneDrawingSize = frameHeight - kDrawingOffset;
   CGRect spellRuneDrawingFrame = CGRectMake(0, 0, spellRuneDrawingSize, spellRuneDrawingSize);
   _spellRuneDrawingView = [[SpellRuneDrawingView alloc] initWithFrame:spellRuneDrawingFrame];
   _spellRuneDrawingView.center = [self.view convertPoint:[self view].center

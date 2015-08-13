@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zmk-9d-V2q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zmk-9d-V2q">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -586,7 +585,7 @@ Make sure you’re on the same Wifi network.</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yul-7g-p2L"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cON-IO-oVk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3op-fa-Jb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1116,7 +1115,7 @@ Make sure you’re on the same Wifi network.</string>
                                     <action selector="castSpell:" destination="CK9-Tz-gh5" eventType="touchUpInside" id="1gm-zO-5vu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2u-gw-vnp" userLabel="Fire">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2u-gw-vnp" userLabel="Fire">
                                 <rect key="frame" x="484" y="123" width="116" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="J2u-gw-vnp" secondAttribute="height" multiplier="116:103" id="Uaw-sc-FmT"/>
@@ -1155,7 +1154,9 @@ Make sure you’re on the same Wifi network.</string>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-eL-7lz" userLabel="Shield">
                                 <rect key="frame" x="16" y="252" width="98" height="94"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="754-Wv-pZu"/>
                                     <constraint firstAttribute="width" secondItem="V7B-eL-7lz" secondAttribute="height" multiplier="49:47" id="IjA-Mj-w8c"/>
+                                    <constraint firstAttribute="width" constant="98" id="SVP-19-dH2"/>
                                 </constraints>
                                 <state key="normal" image="spell_shield">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1186,15 +1187,15 @@ Make sure you’re on the same Wifi network.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ukr-dV-yya" firstAttribute="top" secondItem="bo1-Y5-WPk" secondAttribute="bottom" id="0Yl-z3-QZM"/>
-                            <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V7B-eL-7lz" secondAttribute="trailing" constant="16" id="0mE-yW-p0o"/>
+                            <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" relation="lessThanOrEqual" secondItem="V7B-eL-7lz" secondAttribute="trailing" id="0mE-yW-p0o"/>
                             <constraint firstAttribute="trailing" secondItem="ps0-RC-5Cb" secondAttribute="trailing" constant="16" id="28a-wY-mIS"/>
                             <constraint firstItem="J2u-gw-vnp" firstAttribute="top" secondItem="yya-Vz-L9E" secondAttribute="bottom" id="3UV-RY-6PV"/>
                             <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bo1-Y5-WPk" secondAttribute="trailing" constant="8" id="5UY-71-bku"/>
-                            <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oWN-8V-VMk" secondAttribute="trailing" constant="8" id="Ctz-lt-IpM"/>
+                            <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oWN-8V-VMk" secondAttribute="trailing" constant="8" id="Ctz-lt-IpM"/>
                             <constraint firstAttribute="centerY" secondItem="O4y-sH-dct" secondAttribute="centerY" id="F09-xG-DIz"/>
                             <constraint firstItem="Ukr-dV-yya" firstAttribute="top" secondItem="nTX-Pp-m5p" secondAttribute="bottom" constant="16" id="FYE-9c-BPA"/>
                             <constraint firstItem="O4y-sH-dct" firstAttribute="top" secondItem="yya-Vz-L9E" secondAttribute="bottom" id="Fqs-Zx-mCD"/>
-                            <constraint firstItem="V7B-eL-7lz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="hsS-bB-g4Q" secondAttribute="leading" constant="24" id="FrM-tS-6eT"/>
+                            <constraint firstItem="V7B-eL-7lz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="hsS-bB-g4Q" secondAttribute="leading" constant="6" id="FrM-tS-6eT"/>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="6GF-Py-6uK" secondAttribute="trailing" id="G7g-zh-0n2"/>
                             <constraint firstItem="bo1-Y5-WPk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="hsS-bB-g4Q" secondAttribute="leading" id="Gv3-1M-sLp"/>
                             <constraint firstItem="V7B-eL-7lz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oWN-8V-VMk" secondAttribute="bottom" constant="16" id="Jg9-0Z-XWQ"/>
@@ -1204,25 +1205,29 @@ Make sure you’re on the same Wifi network.</string>
                             <constraint firstAttribute="trailing" secondItem="O4y-sH-dct" secondAttribute="trailing" id="OCf-cV-M4A"/>
                             <constraint firstAttribute="centerY" secondItem="ps0-RC-5Cb" secondAttribute="centerY" id="YMo-tM-Xfh"/>
                             <constraint firstItem="6GF-Py-6uK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ps0-RC-5Cb" secondAttribute="bottom" constant="16" id="ZNf-b1-eMN"/>
-                            <constraint firstItem="6GF-Py-6uK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="8" id="d87-BN-w4c"/>
+                            <constraint firstItem="ps0-RC-5Cb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nTX-Pp-m5p" secondAttribute="trailing" id="bLr-MG-eGH"/>
+                            <constraint firstItem="6GF-Py-6uK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="8" id="d87-BN-w4c"/>
                             <constraint firstAttribute="centerX" secondItem="nTX-Pp-m5p" secondAttribute="centerX" id="ddi-bK-jp1"/>
-                            <constraint firstItem="ps0-RC-5Cb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="16" id="fU5-at-Qzh"/>
+                            <constraint firstItem="ps0-RC-5Cb" firstAttribute="leading" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="8" id="fU5-at-Qzh"/>
                             <constraint firstItem="oWN-8V-VMk" firstAttribute="leading" relation="lessThanOrEqual" secondItem="hsS-bB-g4Q" secondAttribute="leading" id="jCZ-Tz-jH1"/>
-                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ps0-RC-5Cb" secondAttribute="trailing" constant="24" id="jnf-Dq-lNV"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ps0-RC-5Cb" secondAttribute="trailing" id="jnf-Dq-lNV"/>
                             <constraint firstAttribute="centerX" secondItem="O4y-sH-dct" secondAttribute="centerX" id="k6U-pa-euT"/>
                             <constraint firstItem="bo1-Y5-WPk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V7B-eL-7lz" secondAttribute="bottom" constant="16" id="kxR-vF-1j6"/>
                             <constraint firstItem="Ukr-dV-yya" firstAttribute="top" secondItem="O4y-sH-dct" secondAttribute="bottom" id="sMA-A4-btu"/>
                             <constraint firstAttribute="centerY" secondItem="V7B-eL-7lz" secondAttribute="centerY" id="u06-NW-zde"/>
                             <constraint firstItem="ps0-RC-5Cb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J2u-gw-vnp" secondAttribute="bottom" constant="16" id="v5G-lk-PGs"/>
                             <constraint firstItem="nTX-Pp-m5p" firstAttribute="leading" secondItem="bo1-Y5-WPk" secondAttribute="trailing" constant="16" id="vd9-Q7-1kd"/>
-                            <constraint firstItem="J2u-gw-vnp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="8" id="wGc-KX-6v8"/>
+                            <constraint firstItem="J2u-gw-vnp" firstAttribute="leading" secondItem="nTX-Pp-m5p" secondAttribute="trailing" constant="12" id="wGc-KX-6v8"/>
                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="J2u-gw-vnp" secondAttribute="trailing" id="wjG-dD-SG9"/>
                             <constraint firstItem="oWN-8V-VMk" firstAttribute="top" secondItem="yya-Vz-L9E" secondAttribute="bottom" id="xkS-4u-iOb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="vd9-Q7-1kd"/>
+                                <exclude reference="FrM-tS-6eT"/>
                                 <exclude reference="28a-wY-mIS"/>
+                                <exclude reference="fU5-at-Qzh"/>
+                                <exclude reference="jnf-Dq-lNV"/>
                             </mask>
                         </variation>
                     </view>
