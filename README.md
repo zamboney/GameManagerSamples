@@ -6,7 +6,7 @@ This is a collection of samples using the [Google Cast Game Manager API](https:/
 
 * **StarCast**: A simple multiplayer shoot-em-up. The Android and iOS versions can control a spaceship. The Chrome version can control up to 4 spaceships using the keyboard.
 
-* **SpellCast**: Team up with up to 3 friends and draw arcane symbols on your device to cast spells and defeat monsters!  This sample shows examples of the [Cast Game UX guidelines (PDF)](https://developers.google.com/cast/downloads/GoogleCastGameUXguidelinesV0.9.pdf), such as setting up a multiplayer lobby.
+* **SpellCast**: Team up with up to 3 friends and draw arcane symbols on your device to cast spells and defeat monsters!  This sample shows examples of the [Cast Game UX guidelines (PDF)](https://developers.google.com/cast/downloads/GoogleCastGameUXguidelines-v20151203.pdf), such as setting up a multiplayer lobby.
 
 * **GameDebugger**: A utility that lets you see game state, view the messages being passed around, and connect new players. Works with the [Game Manager Debug UI](https://developers.google.com/cast/docs/debugging#game) on the TV.
 
