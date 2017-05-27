@@ -1,0 +1,24 @@
+{
+  "name": "GameManagerSamples",
+  "version": "1.0.0",
+  "description": "This is a collection of samples using the [Google Cast Game Manager API](https://developers.google.com/cast/docs/gaming). The Google Cast Game Manager allows native Android, iOS, and Chrome games to connect with a Google Cast device and have communication and synchronization of player and game states across devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serv": "live-server --port=80 ./spritedemo/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamboney/GameManagerSamples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamboney/GameManagerSamples/issues"
+  },
+  "homepage": "https://github.com/zamboney/GameManagerSamples#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

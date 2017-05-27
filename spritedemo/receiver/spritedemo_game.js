@@ -237,7 +237,7 @@ cast.games.spritedemo.SpritedemoGame.prototype.onAssetsLoaded_ = function() {
 
   for (var i = 0; i < cast.games.spritedemo.SpritedemoGame.MAX_NUM_SPRITES;
       i++) {
-    var sprite = PIXI.Sprite.fromImage('assets/icon.png');
+    var sprite = new PIXI.Text('Offir',{fontFamily : 'Arial', fontSize: 24, fill : 0xff1010, align : 'center'});
     sprite.anchor.x = 0.5;
     sprite.anchor.y = 0.5;
     sprite.scale.x = sprite.scale.y =

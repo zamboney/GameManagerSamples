@@ -37,5 +37,6 @@ function loadScriptsNoCache(paths) {
 
 loadScriptsNoCache([
   'https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadGamesSDK&',
-  'all.js'
+  'bin/all.js',
+  'spritedemo_main.js'
 ]);
