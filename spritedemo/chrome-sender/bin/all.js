@@ -796,7 +796,7 @@ cast.games.spritedemo.SpritedemoMessage = function() {
 goog.exportSymbol("cast.games.spritedemo.SpritedemoMessage", cast.games.spritedemo.SpritedemoMessage);
 var gameManagerClient = null;
 window.__onGCastApiAvailable = function(loaded, errorInfo) {
-  loaded ? cast.games.common.sender.setup("D6120C32", onSessionReady_) : (console.error("### Cast Sender SDK failed to load:"), console.dir(errorInfo));
+  loaded ? cast.games.common.sender.setup("D72AA1CC", onSessionReady_) : (console.error("### Cast Sender SDK failed to load:"), console.dir(errorInfo));
 };
 var onSessionReady_ = function(session) {
   console.log("### Creating game manager client.");
